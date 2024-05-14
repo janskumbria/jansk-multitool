@@ -1,0 +1,44 @@
+@echo off
+:Main
+cls
+title ................ jansk multi tool ................
+color c
+echo JANSK MULTITOOL V1
+echo ................ welcome ................                  
+echo.
+echo [1] youtube
+echo [2] wiki
+echo [3] ig
+echo [4] quit
+set /p ans="Enter Choice:"
+
+if %ans%==1 (
+goto a
+)
+if %ans%==2 (
+goto b
+)
+if %ans%==3 (
+goto c
+)
+if %ans%==4 (
+goto exit
+)
+
+:a
+cls 
+start Chrome www.youtube.com
+pause
+goto Main
+:b
+cls 
+start Chrome wikipedia.com
+pause
+goto Main
+:c
+cls 
+start Chrome instagram.com
+pause
+goto Main
+:exit
+exit
